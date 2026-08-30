@@ -6,6 +6,8 @@ const pages = {
   '/corsi': courses,
 }
 
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, '')
+
 function iconInstagram() {
   return `<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>`
 }
@@ -44,14 +46,18 @@ function notFound() {
 }
 
 function render() {
-  const path = window.location.pathname.replace(/\/$/, '') || '/'
+  const path = window.location.pathname.replace(basePath, '').replace(/\/$/, '') || '/'
   document.querySelector('#app').innerHTML = (pages[path] || notFound)()
-  document.querySelectorAll('[data-link]').forEach((link) => link.addEventListener('click', (event) => {
+  document.querySelectorAll('[data-link]').forEach((link) => {
+    const destination = link.getAttribute('href')
+    if (destination.startsWith('/')) link.href = `${basePath}${destination}`
+    link.addEventListener('click', (event) => {
     event.preventDefault()
     history.pushState({}, '', link.href)
     render()
     scrollTo({ top: 0, behavior: 'instant' })
-  }))
+    })
+  })
   const button = document.querySelector('.menu-button')
   const menu = document.querySelector('#menu')
   button.addEventListener('click', () => {
