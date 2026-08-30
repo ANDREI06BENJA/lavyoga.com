@@ -29,31 +29,31 @@ h2 { font-size: clamp(2.2rem, 4vw, 4.4rem); line-height: 1; }
 .arrow-link { padding-bottom: .4rem; border-bottom: 1px solid currentColor; font-size: .68rem; letter-spacing: .04em; text-decoration: none; text-transform: uppercase; }
 .arrow-link:hover { color: var(--brown); }
 .arrow-link b { margin-left: .6rem; font-size: 1rem; }
-.hero-photo { min-height: 38rem; background: url('/image/DXe7z0bDEFW.jpg') center/cover; }
+.hero-photo { min-height: 38rem; background: url('../image/DXe7z0bDEFW.jpg') center/cover; }
 .welcome { max-width: 70rem; padding: 8rem 10vw; }
 .welcome h2 { margin-bottom: 1.8rem; }
 .welcome > p:not(.kicker) { max-width: 30rem; margin-bottom: 2rem; font-size: .8rem; line-height: 1.7; }
 .image-grid { display: grid; grid-template-columns: 1.15fr .85fr 1fr; gap: 1rem; padding: 0 5vw 6rem; }
 .image-grid > div { min-height: 25rem; background-position: center; background-size: cover; }
-.image-grid-one { background-image: url('/image/DXe7z0bDEF.jpg'); }
-.image-grid-two { margin-top: 5rem; background-image: url('/image/bb.png'); background-position: center 35% !important; }
-.image-grid-three { background-image: url('/image/hfhgv.png'); background-position: center 35% !important; }
+.image-grid-one { background-image: url('../image/DXe7z0bDEF.jpg'); }
+.image-grid-two { margin-top: 5rem; background-image: url('../image/bb.png'); background-position: center 35% !important; }
+.image-grid-three { background-image: url('../image/hfhgv.png'); background-position: center 35% !important; }
 .practice { display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; padding: 7rem 10vw; background: var(--pale); }
 .practice > div { max-width: 42rem; }
 .practice h2 { margin-bottom: 1.5rem; }
 .practice p { max-width: 27rem; font-size: .8rem; line-height: 1.7; }
-.wide-photo { height: min(55vw, 42rem); background: url('/image/DXe7z0bDE.jpg') center/cover; }
+.wide-photo { height: min(55vw, 42rem); background: url('../image/DXe7z0bDE.jpg') center/cover; }
 
 .page-intro { max-width: 75rem; padding: 8rem 10vw 6rem; }
 .page-intro > p:not(.kicker) { max-width: 30rem; font-size: .8rem; line-height: 1.7; }
 .about-content { display: grid; grid-template-columns: 1fr 1fr; max-width: 75rem; margin: auto; }
-.about-photo { min-height: 35rem; background: url('image/hgu.23.44.png') center 35%/cover; }
+.about-photo { min-height: 35rem; background: url('../image/hfhgv.png') center 35%/cover; }
 .about-content > div:last-child { padding: 5rem 10vw 4rem 5rem; }
 .about-content p { max-width: 28rem; font-size: .8rem; line-height: 1.7; }
 .about-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; max-width: 75rem; margin: 5rem auto 0; padding: 0 5vw; }
 .about-gallery div { height: 31rem; background-position: center; background-size: cover; }
-.about-gallery div:first-child { background-image: url('/image/bb.png'); background-position: center 35%; }
-.about-gallery div:last-child { background-image: url('/image/DXe.jpeg'); }
+.about-gallery div:first-child { background-image: url('../image/bb.png'); background-position: center 35%; }
+.about-gallery div:last-child { background-image: url('../image/DXe.jpeg'); }
 .course-list { display: grid; grid-template-columns: repeat(2, 1fr); max-width: 75rem; margin: auto; border-top: 1px solid var(--line); }
 .course-list article { display: flex; flex-direction: column; min-height: 22rem; padding: 2.5rem; border-right: 1px solid var(--line); }
 .course-list article:last-child { border: 0; }
@@ -63,8 +63,8 @@ h2 { font-size: clamp(2.2rem, 4vw, 4.4rem); line-height: 1; }
 .course-list small { margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--line); }
 .course-images { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; max-width: 75rem; margin: 5rem auto 0; padding: 0 5vw; }
 .course-images div { height: 30rem; background-position: center; background-size: cover; }
-.course-images div:first-child { background-image: url('/image/DXe7z0b.jpg'); }
-.course-images div:last-child { background-image: url('/image/hh.jpeg'); }
+.course-images div:first-child { background-image: url('../image/DXe7z0b.jpg'); }
+.course-images div:last-child { background-image: url('../image/hh.jpeg'); }
 .missing { min-height: 58svh; padding: 8rem 10vw; background: var(--brown); color: var(--paper); }
 .missing h1 { margin: 0 0 1.8rem; }
 .missing > p:not(.kicker) { max-width: 22rem; margin-bottom: 2.5rem; font-size: .8rem; line-height: 1.7; }
