@@ -89,6 +89,7 @@ footer { display: flex; justify-content: space-between; align-items: center; min
   .header:has(nav.open) .logo { position: relative; z-index: 6; }
   .header:has(nav.open) .instagram-icon { position: relative; z-index: 6; }
   .header nav { display: none; }
+  .header nav.static-nav { display: flex; gap: .7rem; justify-self: end; font-size: .55rem; }
   .header nav.open { position: fixed; inset: 0; z-index: 5; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; background: var(--brown); color: var(--paper); }
   .header nav.open a { font-size: clamp(2.2rem, 10vw, 4rem); font-weight: 500; line-height: 1; text-decoration: none; }
   .header nav.open a:hover { color: var(--paper); opacity: .7; }
